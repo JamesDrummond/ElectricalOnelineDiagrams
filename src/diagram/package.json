@@ -4,9 +4,9 @@
   "description": "A custom react properties panel example",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --port=9999 --watch",
-    "build": "webpack --info-verbosity verbose --watch --output=./dist/app.js",
-    "debug": "webpack-dev-server --debug --inspect=5858"
+    "start": "nodemon ./dist/server.js",
+    "build": "webpack --output=./dist/app.js",
+    "dev": "webpack --watch --output=./dist/app.js"
   },
   "author": {
     "name": "Niklas Kiefer",

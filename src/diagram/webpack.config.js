@@ -5,7 +5,6 @@ module.exports = {
   mode: 'development',
   entry: path.join(__dirname, 'app/app.js'),
   context: path.join(__dirname, 'app'),
-  watch: true,
   output: {
     path: path.join(__dirname, 'dist'),
     filename: "app.js"
@@ -55,7 +54,8 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'assets/**', to: 'vendor/bpmn-js', context: '../node_modules/bpmn-js/dist/' },
       { from: '**/*.{html,css,bpmn}' },
-      { from: 'lib', to: 'lib'}
+      { from: 'lib', to: 'lib'},
+      { from: 'server.js'}
     ])
   ],
   devServer: {
