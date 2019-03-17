@@ -7,6 +7,19 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Launch Diagram Debug",
+            "cwd": "${workspaceFolder}/src/diagram",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "debug"
+            ],
+            "port": 9229
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch Webpack",
             "program": "${workspaceFolder}/node_modules/webpack/bin/webpack.js"
         }

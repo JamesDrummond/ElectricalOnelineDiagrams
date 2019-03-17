@@ -96,8 +96,3 @@ class PropertiesView extends React.Component {
 npm install
 npm start
 ```
-
-
-## License
-
-MIT
