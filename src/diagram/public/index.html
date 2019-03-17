@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <base href="/">
+    <link rel="stylesheet" href="vendor/bpmn-js/assets/diagram-js.css" />
+    <link rel="stylesheet" href="vendor/bpmn-js/assets/bpmn-font/css/bpmn-embedded.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <style>
+      body, html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+      }
+  
+      .modeler-parent {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      #modeler-container {
+        flex: 1;
+      }
+      #properties-container {
+        overflow-y: auto;
+        border-top: solid 2px #CCC;
+        background: #FAFAFA;
+        padding: 5px;
+        height: 200px;
+      }
+    </style>
+    <title>diagram</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but diagram doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <!-- <div id="app"></div> -->
+    <div class="modeler-parent">
+      <div id="modeler-container"></div>
+    </div>
+    <ul class="buttons">
+      <li>
+        download
+      </li>
+      <li>
+        <a id="js-download-diagram" href title="download BPMN diagram">
+          BPMN diagram
+        </a>
+      </li>
+      <li>
+        <a id="js-download-svg" href title="download as SVG image">
+          SVG image
+        </a>
+      </li>
+    </ul>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
