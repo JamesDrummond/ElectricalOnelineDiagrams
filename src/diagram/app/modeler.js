@@ -17,7 +17,7 @@ import nyanDrawModule from './lib/nyan/draw';
 import nyanPaletteModule from './lib/nyan/palette';
 const modeler = new Modeler({
   container: $modelerContainer, 
-  additionalModules: [ nyanPaletteModule, nyanDrawModule ], 
+  //additionalModules: [ nyanPaletteModule, nyanDrawModule ], 
   // moddleExtensions: {
   // custom: customModdleExtension
   // },
@@ -47,13 +47,6 @@ axios.get('http://localhost:8080/diagram.bpmn')
       xml = builder.buildObject(result);
     });
     console.log(xml);
-
-
-    // import nyanDrawModule from './lib/nyan/draw';
-    // import nyanPaletteModule from './lib/nyan/palette';
-
-    
-
     // const propertiesPanel = new PropertiesPanel({
     // //new PropertiesPanel({
     //    container: $propertiesContainer,
